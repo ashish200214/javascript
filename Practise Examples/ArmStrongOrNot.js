@@ -18,4 +18,5 @@ function armStrongOrNot(n){
     }
 }
 
-armStrongOrNot(153);
+let n = prompt("Enter the Number : ");
+armStrongOrNot(n);
