@@ -1,5 +1,6 @@
 let n = prompt("Enter the Number : ");
-let rev=0,rem,original;
+function reverseNumber(n){
+    let rev=0,rem,original;
 original=n;
 
 while(n!=0){
@@ -7,8 +8,10 @@ while(n!=0){
     rev = rev*10+rem;
     n = Math.floor(n/10);
 }
+    return rev;
+}
 
-if(rev==original){
+if(reverseNumber(n)==n){
     console.log("Number is Palindrome");
 }
 else{
